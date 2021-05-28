@@ -2,7 +2,7 @@ const express = require('express')
 const WebSocket = require('ws')
 
 let wss = new WebSocket.Server({
-  port: 3001
+  port: 5001
 })
 
 wss.on('connection', (ws) => {
@@ -32,6 +32,6 @@ app.post('/', (req, res) => {
   res.send(200)
 })
 
-app.listen(3000, () => {
-  console.log('Servidor corriendo en el puerto ', 3000)
+app.listen(5000, () => {
+  console.log('Servidor corriendo en el puerto ', 5000)
 })
